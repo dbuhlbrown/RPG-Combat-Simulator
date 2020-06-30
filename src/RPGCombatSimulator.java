@@ -6,21 +6,33 @@ public class RPGCombatSimulator extends JFrame{
     private JTextField player2AttackTextField;
     private JLabel player1AttackLabel;
     private JLabel player2AttackLabel;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
-    private JTextField textField6;
-    private JTextField textField7;
-    private JTextField textField8;
-    private JTextField textField9;
-    private JTextField textField10;
-    private JTextField textField11;
+    private JTextField player1DexAttackTextField;
+    private JTextField player2DexTextField;
+    private JTextField player1DefenseTextField;
+    private JTextField player2DefenseTextField;
+    private JTextField player1MagicTextField;
+    private JTextField player2MagicTextField;
+    private JTextField player1HealthTextField;
+    private JTextField player2HealthTextField;
+    private JTextField attackEqTextField;
+    private JTextField hitEqTextField;
+    private JTextField retaliationEqTextField;
     private JButton loadEquationsButton;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
+    private JButton selectOutputFileButton;
+    private JButton saveSettingsButton;
+    private JButton runSimulationButton;
+    private JLabel player1DexLabel;
+    private JLabel player1DefenseLabel;
+    private JLabel player1MagicLabel;
+    private JLabel player1HealthLabel;
+    private JLabel attackEqLabel;
+    private JLabel hitEqLabel;
+    private JLabel retaliationEqLabel;
+    private JLabel player2StatsLabel;
+    private JLabel player2DexLabel;
+    private JLabel player2DefenseLabel;
+    private JLabel player2MagicLabel;
+    private JLabel player2HealthLabel;
 
     public RPGCombatSimulator( String appName){
 
