@@ -46,7 +46,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="970a1" class="javax.swing.JTextField" binding="player2AttackTextField">
         <constraints>
@@ -55,7 +57,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="73404" class="javax.swing.JLabel" binding="player1AttackLabel">
         <constraints>
@@ -84,14 +88,16 @@
           <text value="Dex"/>
         </properties>
       </component>
-      <component id="a372d" class="javax.swing.JTextField" binding="player1DexAttackTextField">
+      <component id="a372d" class="javax.swing.JTextField" binding="player1DexTextField">
         <constraints>
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="76311" class="javax.swing.JLabel" binding="player2DexLabel">
         <constraints>
@@ -118,7 +124,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="f94db" class="javax.swing.JLabel" binding="player2DefenseLabel">
         <constraints>
@@ -136,7 +144,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="2b478" class="javax.swing.JLabel" binding="player1MagicLabel">
         <constraints>
@@ -154,7 +164,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="cf6e3" class="javax.swing.JTextField" binding="player2MagicTextField">
         <constraints>
@@ -163,7 +175,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="63e1b" class="javax.swing.JLabel" binding="player2MagicLabel">
         <constraints>
@@ -190,7 +204,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="15"/>
+        </properties>
       </component>
       <component id="d33d0" class="javax.swing.JLabel" binding="player2HealthLabel">
         <constraints>
@@ -219,18 +235,9 @@
         </constraints>
         <properties/>
       </component>
-      <component id="b1d95" class="javax.swing.JButton" binding="saveSettingsButton">
-        <constraints>
-          <grid row="16" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Save Settings"/>
-        </properties>
-      </component>
       <component id="4f0c6" class="javax.swing.JButton" binding="runSimulationButton">
         <constraints>
-          <grid row="17" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="16" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
@@ -298,7 +305,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="4"/>
+        </properties>
       </component>
       <component id="5a206" class="javax.swing.JTextField" binding="player2HealthTextField">
         <constraints>
@@ -307,7 +316,9 @@
           </grid>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="15"/>
+        </properties>
       </component>
     </children>
   </grid>
