@@ -40,6 +40,9 @@ public class RPGCombatSimulator extends JFrame{
     private JLabel player2DefenseLabel;
     private JLabel player2MagicLabel;
     private JLabel player2HealthLabel;
+    private JTextField player1DamageTextField;
+    private JTextField player2DamageTextField;
+    private JLabel player2DamageLabel;
 
     private Character player1;
     private Character player2;
@@ -90,20 +93,20 @@ public class RPGCombatSimulator extends JFrame{
         //int attack, int dex, int health, int defense, int magic
         player1 = new Character( Integer.valueOf(player1AttackTextField.getText()),  Integer.valueOf(player1DexTextField.getText()),
                 Integer.valueOf(player1HealthTextField.getText()),  Integer.valueOf(player1DefenseTextField.getText()),
-                Integer.valueOf(player1MagicTextField.getText()), 4
+                Integer.valueOf(player1MagicTextField.getText()), Integer.valueOf(player1DamageTextField.getText())
         );
 
         player2 = new Character( Integer.valueOf(player2AttackTextField.getText()),  Integer.valueOf(player2DexTextField.getText()),
                 Integer.valueOf(player2HealthTextField.getText()),  Integer.valueOf(player2DefenseTextField.getText()),
-                Integer.valueOf(player2MagicTextField.getText()), 4
+                Integer.valueOf(player2MagicTextField.getText()), Integer.valueOf(player2DamageTextField.getText())
         );
-
-        Simulator currentSimulation = new Simulator(10000, player1, player2);
+        int iterations = 10000;
+        Simulator currentSimulation = new Simulator(iterations, player1, player2);
         currentSimulation.runSimulation();
-        System.out.println(currentSimulation.averageDamageDealt);
-        System.out.println(currentSimulation.averageNumberOfRounds);
-        System.out.println(currentSimulation.player1wins);
-        System.out.println(currentSimulation.player2wins);
+        System.out.println(currentSimulation.averageDamageDealt/iterations);
+        System.out.println(currentSimulation.averageNumberOfRounds/iterations);
+        System.out.println(currentSimulation.player1wins/iterations);
+        System.out.println(currentSimulation.player2wins/iterations);
 
         //try (PrintStream out = new PrintStream(new FileOutputStream(directoryChosen.getPath()+"\\filename.txt"))) {
         //    out.print(text);
@@ -112,8 +115,8 @@ public class RPGCombatSimulator extends JFrame{
         try {
             PrintStream output = new PrintStream(new FileOutputStream(directoryChosen.getPath() + "\\filename.txt", true));
 
-            output.println(currentSimulation.averageDamageDealt + "," + currentSimulation.averageNumberOfRounds + "," +
-                           currentSimulation.player1wins + "," + currentSimulation.player2wins);
+            output.println(currentSimulation.averageDamageDealt/iterations + "," + currentSimulation.averageNumberOfRounds/iterations + "," +
+                           currentSimulation.player1wins/iterations + "," + currentSimulation.player2wins/iterations);
 
             output.close();
         } catch(IOException e){

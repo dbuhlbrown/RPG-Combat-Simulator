@@ -39,7 +39,7 @@ public class Character {
     //takes in the attacking character and calculates how much health is lost
     public void takeHit( Character attackingCharacter){
 
-        int damageDealt = (attackingCharacter.damage + rand.nextInt(6) ) - this.defense;
+        int damageDealt = (attackingCharacter.damage + rand.nextInt(12) ) - this.defense;
         //System.out.println("damageDealth = " + damageDealt);
         if(damageDealt <= 0){
             damageDealt = 1;
@@ -52,7 +52,7 @@ public class Character {
     //performs the attack action
     public void attack( Character characterToBeAttacked){
 
-        if(this.dex + rand.nextInt(6) >= characterToBeAttacked.dex + rand.nextInt(6)){
+        if(this.attack + rand.nextInt(12) >= characterToBeAttacked.dex + rand.nextInt(12)){
             //if you enter this if, it means you have hit
             characterToBeAttacked.takeHit(this);
         }
@@ -62,7 +62,7 @@ public class Character {
     //need to fix this
     public void retaliate(Character characterToRetaliateAgainst){
 
-        if(this.dex + rand.nextInt(6) - 1 >= characterToRetaliateAgainst.dex + rand.nextInt(6)){
+        if(this.attack + rand.nextInt(12) - 1 >= characterToRetaliateAgainst.dex + rand.nextInt(12)){
             //if you enter this if, it means you have hit
             characterToRetaliateAgainst.takeHit(this);
         }
