@@ -18,6 +18,7 @@ public class Character {
     private int magic;
     private int damage;
     private int totalDamageDealt;
+    private String playerClass;
     Random rand = new Random();
 
     Character( ){
@@ -25,7 +26,7 @@ public class Character {
 
     }
 
-    Character(int attack, int dex, int health, int defense, int magic, int damage){
+    Character(int attack, int dex, int health, int defense, int magic, int damage, String playerClass){
 
         this.attack = attack;
         this.dex = dex;
@@ -34,27 +35,65 @@ public class Character {
         this.magic = magic;
         this.damage = damage;
         this.totalDamageDealt = 0;
+        this.playerClass = playerClass;
     }
 
     //takes in the attacking character and calculates how much health is lost
     public void takeHit( Character attackingCharacter){
+        int attack_d6 = rand.nextInt(7);
 
-        int damageDealt = (attackingCharacter.damage + rand.nextInt(12) ) - this.defense;
-        //System.out.println("damageDealth = " + damageDealt);
-        if(damageDealt <= 0){
-            damageDealt = 1;
+        if( attack_d6 == 0 ){
+
+            attack_d6 = 1;
         }
 
+        int damageDealt = (attackingCharacter.damage + attack_d6 ) - this.defense;
+        //System.out.println("damageDealt = " + damageDealt);
+        if(attack_d6 == 6){
+            damageDealt++;
+        }
+
+        if(damageDealt <= 0){
+            damageDealt = 0;
+        }
+
+        //System.out.println("damageDealth = " + damageDealt);
         this.health -= damageDealt;
-        totalDamageDealt += damageDealt;
+        this.totalDamageDealt += damageDealt;
     }
 
     //performs the attack action
     public void attack( Character characterToBeAttacked){
+        //System.out.println(playerClass);
 
-        if(this.attack + rand.nextInt(12) >= characterToBeAttacked.dex + rand.nextInt(12)){
-            //if you enter this if, it means you have hit
-            characterToBeAttacked.takeHit(this);
+        int hitD6 = rand.nextInt(7);
+        int defendingPlayerHitD6 = rand.nextInt(7);
+
+        if(  hitD6 == 0 ){
+
+            hitD6 = 1;
+        }
+
+        if ( defendingPlayerHitD6 == 0 ){
+
+            defendingPlayerHitD6 = 1;
+        }
+
+        if(playerClass.equals("Warrior")) {
+           // System.out.println("class is warrior");
+
+          //  System.out.println("hit D6 = " + hitD6);
+            if ( (this.attack + hitD6 >= characterToBeAttacked.dex + defendingPlayerHitD6 - 1)|| hitD6 == 6) {
+                //if you enter this if, it means you have hit
+                characterToBeAttacked.takeHit(this);
+            }
+
+        } else if( playerClass.equals("Ranger") || playerClass.equals("Rogue")){
+
+            if ( (this.dex + hitD6) >= characterToBeAttacked.dex + defendingPlayerHitD6 - 1  || hitD6 == 6) {
+                //if you enter this if, it means you have hit
+                characterToBeAttacked.takeHit(this);
+            }
         }
     }
 
@@ -62,9 +101,34 @@ public class Character {
     //need to fix this
     public void retaliate(Character characterToRetaliateAgainst){
 
-        if(this.attack + rand.nextInt(12) - 1 >= characterToRetaliateAgainst.dex + rand.nextInt(12)){
-            //if you enter this if, it means you have hit
-            characterToRetaliateAgainst.takeHit(this);
+        int hitD6 = rand.nextInt(7);
+
+        if(  hitD6 == 0 ){
+
+            hitD6 = 1;
+        }
+
+        int retaliationHitD6 = rand.nextInt(7);
+
+        if( retaliationHitD6 == 0){
+
+            retaliationHitD6 = 1;
+        }
+
+        if(playerClass.equals("Warrior")) {
+
+            if(this.attack + hitD6 - 1 >= characterToRetaliateAgainst.dex + retaliationHitD6){
+                //if you enter this if, it means you have hit
+                characterToRetaliateAgainst.takeHit(this);
+            }
+        }
+
+        else if(playerClass.equals("Rogue") || playerClass.equals("Ranger")) {
+
+            if(this.dex + hitD6 - 1 >= characterToRetaliateAgainst.dex + retaliationHitD6){
+                //if you enter this if, it means you have hit
+                characterToRetaliateAgainst.takeHit(this);
+            }
         }
     }
 

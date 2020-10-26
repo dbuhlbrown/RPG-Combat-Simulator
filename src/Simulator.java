@@ -8,17 +8,20 @@ public class Simulator {
     public double averageNumberOfRounds;
     public int iterations;
     public double averageDamageDealt;
+    public int player1StartingDistance;
+
     Simulator(){
 
 
     }
 
-    Simulator(int iterations, Character player1, Character player2){
+    Simulator(int iterations, Character player1, Character player2, int player1StartingDistance){
 
         this.player1 = player1;
         this.player2 = player2;
         runSimulation();
         this.iterations = iterations;
+        this.player1StartingDistance = player1StartingDistance;
 
     }
 

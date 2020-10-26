@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dcba844-37e7-4512-96aa-9c43d7078dbf" name="Default Changelist" comment="from spare laptop">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filename.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filename.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Character.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RPGCombatSimulator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPGCombatSimulator.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RPGCombatSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPGCombatSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +61,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="249" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594381035178" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
     <configuration name="RPGCombatSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -108,29 +124,39 @@
     <option name="LAST_COMMIT_MESSAGE" value="from spare laptop" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1600754228227">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state x="121" y="0" key="#Project_Structure" timestamp="1603168353144">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1603168353144" />
     <state x="121" y="0" key="#Project_Structure/0.0.1280.683@0.0.1280.683" timestamp="1600754228227" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600755452213">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603169226762">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603169226762" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.683@0.0.1280.683" timestamp="1600755452213" />
-    <state width="1237" height="21" key="GridCell.Tab.0.bottom" timestamp="1600864274454">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state width="1237" height="243" key="GridCell.Tab.0.bottom" timestamp="1603722165206">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="243" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603722165206" />
     <state width="1237" height="21" key="GridCell.Tab.0.bottom/0.0.1280.683@0.0.1280.683" timestamp="1600864274454" />
-    <state width="1237" height="21" key="GridCell.Tab.0.center" timestamp="1600864274453">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state width="1237" height="243" key="GridCell.Tab.0.center" timestamp="1603722165206">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="243" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603722165206" />
     <state width="1237" height="21" key="GridCell.Tab.0.center/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
-    <state width="1237" height="21" key="GridCell.Tab.0.left" timestamp="1600864274453">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state width="1237" height="243" key="GridCell.Tab.0.left" timestamp="1603722165205">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="243" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603722165205" />
     <state width="1237" height="21" key="GridCell.Tab.0.left/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
-    <state width="1237" height="21" key="GridCell.Tab.0.right" timestamp="1600864274453">
-      <screen x="0" y="0" width="1280" height="683" />
+    <state width="1237" height="243" key="GridCell.Tab.0.right" timestamp="1603722165206">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="243" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603722165206" />
     <state width="1237" height="21" key="GridCell.Tab.0.right/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1603169152020">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603169152020" />
   </component>
 </project>

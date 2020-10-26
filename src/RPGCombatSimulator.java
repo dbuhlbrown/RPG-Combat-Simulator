@@ -43,6 +43,9 @@ public class RPGCombatSimulator extends JFrame{
     private JTextField player1DamageTextField;
     private JTextField player2DamageTextField;
     private JLabel player2DamageLabel;
+    private JTextField player1StartingDistance;
+    private JComboBox player1Class;
+    private JComboBox player2Class;
 
     private Character player1;
     private Character player2;
@@ -57,6 +60,18 @@ public class RPGCombatSimulator extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.pack( );
+
+        player1Class.addItem("Warrior");
+        player1Class.addItem("Ranger");
+        player1Class.addItem("Rogue");
+        player1Class.addItem("Mage");
+        player1Class.addItem("Priest");
+
+        player2Class.addItem("Warrior");
+        player2Class.addItem("Ranger");
+        player2Class.addItem("Rogue");
+        player2Class.addItem("Mage");
+        player2Class.addItem("Priest");
 
         runSimulationButton.addActionListener(new ActionListener() {
             @Override
@@ -93,21 +108,21 @@ public class RPGCombatSimulator extends JFrame{
         //int attack, int dex, int health, int defense, int magic
         player1 = new Character( Integer.valueOf(player1AttackTextField.getText()),  Integer.valueOf(player1DexTextField.getText()),
                 Integer.valueOf(player1HealthTextField.getText()),  Integer.valueOf(player1DefenseTextField.getText()),
-                Integer.valueOf(player1MagicTextField.getText()), Integer.valueOf(player1DamageTextField.getText())
+                Integer.valueOf(player1MagicTextField.getText()), Integer.valueOf(player1DamageTextField.getText()), player1Class.getSelectedItem().toString()
         );
 
         player2 = new Character( Integer.valueOf(player2AttackTextField.getText()),  Integer.valueOf(player2DexTextField.getText()),
                 Integer.valueOf(player2HealthTextField.getText()),  Integer.valueOf(player2DefenseTextField.getText()),
-                Integer.valueOf(player2MagicTextField.getText()), Integer.valueOf(player2DamageTextField.getText())
+                Integer.valueOf(player2MagicTextField.getText()), Integer.valueOf(player2DamageTextField.getText()),player2Class.getSelectedItem().toString()
         );
         int iterations = 10000;
-        Simulator currentSimulation = new Simulator(iterations, player1, player2);
+        Simulator currentSimulation = new Simulator(iterations, player1, player2, Integer.valueOf(player1StartingDistance.getText()) );
         currentSimulation.runSimulation();
         System.out.println(currentSimulation.averageDamageDealt/iterations);
         System.out.println(currentSimulation.averageNumberOfRounds/iterations);
         System.out.println(currentSimulation.player1wins/iterations);
         System.out.println(currentSimulation.player2wins/iterations);
-
+        System.out.print("Win Difference = " + String.valueOf((currentSimulation.player1wins/iterations) - (currentSimulation.player2wins/iterations)));
         //try (PrintStream out = new PrintStream(new FileOutputStream(directoryChosen.getPath()+"\\filename.txt"))) {
         //    out.print(text);
        // }
