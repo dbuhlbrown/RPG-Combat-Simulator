@@ -40,21 +40,18 @@ public class Character {
 
     //takes in the attacking character and calculates how much health is lost
     public void takeHit( Character attackingCharacter){
-        int attack_d6 = rand.nextInt(7);
+        int attack_d6 = rand.nextInt(6) + 1;
 
-        if( attack_d6 == 0 ){
-
-            attack_d6 = 1;
-        }
 
         int damageDealt = (attackingCharacter.damage + attack_d6 ) - this.defense;
         //System.out.println("damageDealt = " + damageDealt);
-        if(attack_d6 == 6){
-            damageDealt++;
-        }
 
         if(damageDealt <= 0){
             damageDealt = 0;
+        }
+
+        if(attack_d6 == 6){
+            damageDealt++;
         }
 
         //System.out.println("damageDealth = " + damageDealt);
@@ -66,20 +63,10 @@ public class Character {
     public void attack( Character characterToBeAttacked){
         //System.out.println(playerClass);
 
-        int hitD6 = rand.nextInt(7);
-        int defendingPlayerHitD6 = rand.nextInt(7);
+        int hitD6 = rand.nextInt(6) + 1;
+        int defendingPlayerHitD6 = rand.nextInt(6) + 1;
 
-        if(  hitD6 == 0 ){
-
-            hitD6 = 1;
-        }
-
-        if ( defendingPlayerHitD6 == 0 ){
-
-            defendingPlayerHitD6 = 1;
-        }
-
-        if(playerClass.equals("Warrior")) {
+        if(playerClass.equals("Warrior") || playerClass.equals("Rogue")) {
            // System.out.println("class is warrior");
 
           //  System.out.println("hit D6 = " + hitD6);
@@ -88,9 +75,15 @@ public class Character {
                 characterToBeAttacked.takeHit(this);
             }
 
-        } else if( playerClass.equals("Ranger") || playerClass.equals("Rogue")){
+        } else if( playerClass.equals("Ranger") ){
 
             if ( (this.dex + hitD6) >= characterToBeAttacked.dex + defendingPlayerHitD6 - 1  || hitD6 == 6) {
+                //if you enter this if, it means you have hit
+                characterToBeAttacked.takeHit(this);
+            }
+        } else if( playerClass.equals("Mage")){
+
+            if ( (this.magic + hitD6) >= characterToBeAttacked.magic + defendingPlayerHitD6 - 1  || hitD6 == 6) {
                 //if you enter this if, it means you have hit
                 characterToBeAttacked.takeHit(this);
             }
@@ -101,21 +94,13 @@ public class Character {
     //need to fix this
     public void retaliate(Character characterToRetaliateAgainst){
 
-        int hitD6 = rand.nextInt(7);
+        int hitD6 = rand.nextInt(6) + 1;
 
-        if(  hitD6 == 0 ){
 
-            hitD6 = 1;
-        }
+        int retaliationHitD6 = rand.nextInt(6) + 1;
 
-        int retaliationHitD6 = rand.nextInt(7);
 
-        if( retaliationHitD6 == 0){
-
-            retaliationHitD6 = 1;
-        }
-
-        if(playerClass.equals("Warrior")) {
+        if(playerClass.equals("Warrior") || playerClass.equals("Rogue")) {
 
             if(this.attack + hitD6 - 1 >= characterToRetaliateAgainst.dex + retaliationHitD6){
                 //if you enter this if, it means you have hit
@@ -123,9 +108,15 @@ public class Character {
             }
         }
 
-        else if(playerClass.equals("Rogue") || playerClass.equals("Ranger")) {
+        else if(playerClass.equals("Ranger")) {
 
             if(this.dex + hitD6 - 1 >= characterToRetaliateAgainst.dex + retaliationHitD6){
+                //if you enter this if, it means you have hit
+                characterToRetaliateAgainst.takeHit(this);
+            }
+        } else if(playerClass.equals("Mage")) {
+
+            if(this.magic + hitD6 - 1 >= characterToRetaliateAgainst.magic + retaliationHitD6){
                 //if you enter this if, it means you have hit
                 characterToRetaliateAgainst.takeHit(this);
             }

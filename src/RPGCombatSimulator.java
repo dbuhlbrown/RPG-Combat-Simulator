@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.JavaBean;
+import java.awt.event.MouseMotionAdapter;import java.beans.JavaBean;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,19 +22,12 @@ public class RPGCombatSimulator extends JFrame{
     private JTextField player2MagicTextField;
     private JTextField player1HealthTextField;
     private JTextField player2HealthTextField;
-    private JTextField attackEqTextField;
-    private JTextField hitEqTextField;
-    private JTextField retaliationEqTextField;
-    private JButton loadEquationsButton;
     private JButton selectOutputFileButton;
     private JButton runSimulationButton;
     private JLabel player1DexLabel;
     private JLabel player1DefenseLabel;
     private JLabel player1MagicLabel;
     private JLabel player1HealthLabel;
-    private JLabel attackEqLabel;
-    private JLabel hitEqLabel;
-    private JLabel retaliationEqLabel;
     private JLabel player2StatsLabel;
     private JLabel player2DexLabel;
     private JLabel player2DefenseLabel;
@@ -46,6 +39,14 @@ public class RPGCombatSimulator extends JFrame{
     private JTextField player1StartingDistance;
     private JComboBox player1Class;
     private JComboBox player2Class;
+    private JButton player1Level2Button;
+    private JButton player1Level3Button;
+    private JButton player1Level1Button;
+    private JButton player2Level1;
+    private JButton player2Level2;
+    private JButton player2Level3;
+    private JComboBox player1Race;
+    private JComboBox player2Race;
 
     private Character player1;
     private Character player2;
@@ -73,6 +74,12 @@ public class RPGCombatSimulator extends JFrame{
         player2Class.addItem("Mage");
         player2Class.addItem("Priest");
 
+        player1Race.addItem("Human");
+        player1Race.addItem("Undead");
+
+        player2Race.addItem("Human");
+        player2Race.addItem("Undead");
+
         runSimulationButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -96,6 +103,723 @@ public class RPGCombatSimulator extends JFrame{
                 if( chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION ){
                     directoryChosen = chooser.getSelectedFile();
                     System.out.println(directoryChosen);
+                }
+            }
+        });
+        player1Level1Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if( player1Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("4");
+                        player1DefenseTextField.setText("6");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("13");
+
+                    } else {
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("5");
+                        player1DefenseTextField.setText("5");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("13");
+
+
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("3");
+                        player1DexTextField.setText("6");
+                        player1DefenseTextField.setText("4");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("11");
+
+                    } else {
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("3");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("3");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("11");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("4");
+                        player1DamageTextField.setText("4");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("5");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("11");
+
+                    } else {
+
+                        player1AttackTextField.setText("4");
+                        player1DamageTextField.setText("5");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("4");
+                        player1MagicTextField.setText("3");
+                        player1HealthTextField.setText("11");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("3");
+                        player1DamageTextField.setText("6");
+                        player1DexTextField.setText("3");
+                        player1DefenseTextField.setText("4");
+                        player1MagicTextField.setText("6");
+                        player1HealthTextField.setText("9");
+
+                    } else {
+
+                        player1AttackTextField.setText("3");
+                        player1DamageTextField.setText("6");
+                        player1DexTextField.setText("4");
+                        player1DefenseTextField.setText("3");
+                        player1MagicTextField.setText("6");
+                        player1HealthTextField.setText("9");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("3");
+                        player1DamageTextField.setText("3");
+                        player1DexTextField.setText("4");
+                        player1DefenseTextField.setText("4");
+                        player1MagicTextField.setText("6");
+                        player1HealthTextField.setText("9");
+
+                    } else {
+
+                        player1AttackTextField.setText("3");
+                        player1DamageTextField.setText("3");
+                        player1DexTextField.setText("5");
+                        player1DefenseTextField.setText("3");
+                        player1MagicTextField.setText("6");
+                        player1HealthTextField.setText("9");
+
+                    }
+                }
+
+            }
+        });
+        player1Level2Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if( player1Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("9");
+                        player1DexTextField.setText("6");
+                        player1DefenseTextField.setText("8");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("15");
+
+                    } else {
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("9");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("7");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("15");
+
+
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("5");
+                        player1DexTextField.setText("8");
+                        player1DefenseTextField.setText("6");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("13");
+
+                    } else {
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("5");
+                        player1DexTextField.setText("9");
+                        player1DefenseTextField.setText("5");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("13");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("6");
+                        player1DamageTextField.setText("6");
+                        player1DexTextField.setText("9");
+                        player1DefenseTextField.setText("7");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("13");
+
+                    } else {
+
+                        player1AttackTextField.setText("6");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("9");
+                        player1DefenseTextField.setText("6");
+                        player1MagicTextField.setText("5");
+                        player1HealthTextField.setText("13");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("8");
+                        player1DexTextField.setText("5");
+                        player1DefenseTextField.setText("6");
+                        player1MagicTextField.setText("8");
+                        player1HealthTextField.setText("11");
+
+                    } else {
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("8");
+                        player1DexTextField.setText("6");
+                        player1DefenseTextField.setText("5");
+                        player1MagicTextField.setText("8");
+                        player1HealthTextField.setText("11");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("5");
+                        player1DexTextField.setText("6");
+                        player1DefenseTextField.setText("6");
+                        player1MagicTextField.setText("8");
+                        player1HealthTextField.setText("11");
+
+                    } else {
+
+                        player1AttackTextField.setText("5");
+                        player1DamageTextField.setText("5");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("5");
+                        player1MagicTextField.setText("8");
+                        player1HealthTextField.setText("11");
+
+                    }
+                }
+
+            }
+        });
+        player1Level3Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if( player1Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("9");
+                        player1DamageTextField.setText("11");
+                        player1DexTextField.setText("8");
+                        player1DefenseTextField.setText("10");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("17");
+
+                    } else {
+
+                        player1AttackTextField.setText("9");
+                        player1DamageTextField.setText("11");
+                        player1DexTextField.setText("9");
+                        player1DefenseTextField.setText("9");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("17");
+
+
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("9");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("10");
+                        player1DefenseTextField.setText("8");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("15");
+
+                    } else {
+
+                        player1AttackTextField.setText("9");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("11");
+                        player1DefenseTextField.setText("7");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("15");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("8");
+                        player1DamageTextField.setText("8");
+                        player1DexTextField.setText("11");
+                        player1DefenseTextField.setText("9");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("15");
+
+                    } else {
+
+                        player1AttackTextField.setText("8");
+                        player1DamageTextField.setText("9");
+                        player1DexTextField.setText("11");
+                        player1DefenseTextField.setText("8");
+                        player1MagicTextField.setText("7");
+                        player1HealthTextField.setText("15");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("10");
+                        player1DexTextField.setText("7");
+                        player1DefenseTextField.setText("8");
+                        player1MagicTextField.setText("10");
+                        player1HealthTextField.setText("13");
+
+                    } else {
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("10");
+                        player1DexTextField.setText("8");
+                        player1DefenseTextField.setText("7");
+                        player1MagicTextField.setText("10");
+                        player1HealthTextField.setText("13");
+                    }
+                }
+
+                if( player1Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player1Race.getSelectedItem().toString().equals("Human") ){
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("8");
+                        player1DefenseTextField.setText("8");
+                        player1MagicTextField.setText("10");
+                        player1HealthTextField.setText("13");
+
+                    } else {
+
+                        player1AttackTextField.setText("7");
+                        player1DamageTextField.setText("7");
+                        player1DexTextField.setText("9");
+                        player1DefenseTextField.setText("7");
+                        player1MagicTextField.setText("10");
+                        player1HealthTextField.setText("13");
+
+                    }
+                }
+
+
+            }
+        });
+
+        player2Level1.addMouseMotionListener(new MouseMotionAdapter() { } );
+        
+        player2Level1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if( player2Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("4");
+                        player2DefenseTextField.setText("6");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("13");
+
+                    } else {
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("5");
+                        player2DefenseTextField.setText("5");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("13");
+
+
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("3");
+                        player2DexTextField.setText("6");
+                        player2DefenseTextField.setText("4");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("11");
+
+                    } else {
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("3");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("3");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("11");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("4");
+                        player2DamageTextField.setText("4");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("5");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("11");
+
+                    } else {
+
+                        player2AttackTextField.setText("4");
+                        player2DamageTextField.setText("5");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("4");
+                        player2MagicTextField.setText("3");
+                        player2HealthTextField.setText("11");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("3");
+                        player2DamageTextField.setText("6");
+                        player2DexTextField.setText("3");
+                        player2DefenseTextField.setText("4");
+                        player2MagicTextField.setText("6");
+                        player2HealthTextField.setText("9");
+
+                    } else {
+
+                        player2AttackTextField.setText("3");
+                        player2DamageTextField.setText("6");
+                        player2DexTextField.setText("4");
+                        player2DefenseTextField.setText("3");
+                        player2MagicTextField.setText("6");
+                        player2HealthTextField.setText("9");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("3");
+                        player2DamageTextField.setText("3");
+                        player2DexTextField.setText("4");
+                        player2DefenseTextField.setText("4");
+                        player2MagicTextField.setText("6");
+                        player2HealthTextField.setText("9");
+
+                    } else {
+
+                        player2AttackTextField.setText("3");
+                        player2DamageTextField.setText("3");
+                        player2DexTextField.setText("5");
+                        player2DefenseTextField.setText("3");
+                        player2MagicTextField.setText("6");
+                        player2HealthTextField.setText("9");
+
+                    }
+                }
+
+            }
+
+        });
+        //These stats are for level 3, we need to add the level 2 FIX
+        player2Level2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if( player2Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("9");
+                        player2DexTextField.setText("6");
+                        player2DefenseTextField.setText("8");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("15");
+
+                    } else {
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("9");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("7");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("15");
+
+
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("5");
+                        player2DexTextField.setText("8");
+                        player2DefenseTextField.setText("6");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("13");
+
+                    } else {
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("5");
+                        player2DexTextField.setText("9");
+                        player2DefenseTextField.setText("5");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("13");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("6");
+                        player2DamageTextField.setText("6");
+                        player2DexTextField.setText("9");
+                        player2DefenseTextField.setText("7");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("13");
+
+                    } else {
+
+                        player2AttackTextField.setText("6");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("9");
+                        player2DefenseTextField.setText("6");
+                        player2MagicTextField.setText("5");
+                        player2HealthTextField.setText("13");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("8");
+                        player2DexTextField.setText("5");
+                        player2DefenseTextField.setText("6");
+                        player2MagicTextField.setText("8");
+                        player2HealthTextField.setText("11");
+
+                    } else {
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("8");
+                        player2DexTextField.setText("6");
+                        player2DefenseTextField.setText("5");
+                        player2MagicTextField.setText("8");
+                        player2HealthTextField.setText("11");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("5");
+                        player2DexTextField.setText("6");
+                        player2DefenseTextField.setText("6");
+                        player2MagicTextField.setText("8");
+                        player2HealthTextField.setText("11");
+
+                    } else {
+
+                        player2AttackTextField.setText("5");
+                        player2DamageTextField.setText("5");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("5");
+                        player2MagicTextField.setText("8");
+                        player2HealthTextField.setText("11");
+
+                    }
+                }
+            }
+        });
+        player2Level3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if( player2Class.getSelectedItem().toString().equals("Warrior")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("9");
+                        player2DamageTextField.setText("11");
+                        player2DexTextField.setText("8");
+                        player2DefenseTextField.setText("10");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("17");
+
+                    } else {
+
+                        player2AttackTextField.setText("9");
+                        player2DamageTextField.setText("11");
+                        player2DexTextField.setText("9");
+                        player2DefenseTextField.setText("9");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("17");
+
+
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Ranger")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("9");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("10");
+                        player2DefenseTextField.setText("8");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("15");
+
+                    } else {
+
+                        player2AttackTextField.setText("9");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("11");
+                        player2DefenseTextField.setText("7");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("15");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Rogue")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("8");
+                        player2DamageTextField.setText("8");
+                        player2DexTextField.setText("11");
+                        player2DefenseTextField.setText("9");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("15");
+
+                    } else {
+
+                        player2AttackTextField.setText("8");
+                        player2DamageTextField.setText("9");
+                        player2DexTextField.setText("11");
+                        player2DefenseTextField.setText("8");
+                        player2MagicTextField.setText("7");
+                        player2HealthTextField.setText("15");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Mage")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("10");
+                        player2DexTextField.setText("7");
+                        player2DefenseTextField.setText("8");
+                        player2MagicTextField.setText("10");
+                        player2HealthTextField.setText("13");
+
+                    } else {
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("10");
+                        player2DexTextField.setText("8");
+                        player2DefenseTextField.setText("7");
+                        player2MagicTextField.setText("10");
+                        player2HealthTextField.setText("13");
+                    }
+                }
+
+                if( player2Class.getSelectedItem().toString().equals("Priest")){
+
+                    if( player2Race.getSelectedItem().toString().equals("Human") ){
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("8");
+                        player2DefenseTextField.setText("8");
+                        player2MagicTextField.setText("10");
+                        player2HealthTextField.setText("13");
+
+                    } else {
+
+                        player2AttackTextField.setText("7");
+                        player2DamageTextField.setText("7");
+                        player2DexTextField.setText("9");
+                        player2DefenseTextField.setText("7");
+                        player2MagicTextField.setText("10");
+                        player2HealthTextField.setText("13");
+
+                    }
                 }
             }
         });
@@ -145,8 +869,6 @@ public class RPGCombatSimulator extends JFrame{
         JFrame frame = new RPGCombatSimulator("RPG Combat Simulator");
         frame.setVisible(true);
     }
-
-
 
 
 }

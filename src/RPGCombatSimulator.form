@@ -1,39 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="RPGCombatSimulator">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridBagLayout">
+  <grid id="27dc6" binding="mainPanel" layout-manager="FormLayout">
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <colspec value="fill:252px:grow"/>
+    <colspec value="fill:196px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:d:grow"/>
     <constraints>
-      <xy x="20" y="14" width="907" height="520"/>
+      <xy x="20" y="14" width="860" height="701"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <component id="80a6f" class="javax.swing.JLabel" binding="player2StatsLabel">
         <constraints>
-          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="16"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Player 2 Stats"/>
         </properties>
       </component>
-      <component id="8c50" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <text value="RPG Combat Simulator"/>
-        </properties>
-      </component>
       <component id="7548c" class="javax.swing.JLabel">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="508" height="16"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Player 1 Stats"/>
@@ -41,10 +80,10 @@
       </component>
       <component id="ba2b3" class="javax.swing.JTextField" binding="player1AttackTextField">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -52,10 +91,10 @@
       </component>
       <component id="970a1" class="javax.swing.JTextField" binding="player2AttackTextField">
         <constraints>
-          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -63,8 +102,8 @@
       </component>
       <component id="73404" class="javax.swing.JLabel" binding="player1AttackLabel">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Attack"/>
@@ -72,8 +111,8 @@
       </component>
       <component id="59b08" class="javax.swing.JLabel" binding="player2AttackLabel">
         <constraints>
-          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Attack"/>
@@ -81,8 +120,8 @@
       </component>
       <component id="c3e06" class="javax.swing.JLabel" binding="player1DexLabel">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Dex"/>
@@ -90,10 +129,10 @@
       </component>
       <component id="a372d" class="javax.swing.JTextField" binding="player1DexTextField">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -101,8 +140,8 @@
       </component>
       <component id="76311" class="javax.swing.JLabel" binding="player2DexLabel">
         <constraints>
-          <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Dex"/>
@@ -110,8 +149,8 @@
       </component>
       <component id="f586" class="javax.swing.JLabel" binding="player1DefenseLabel">
         <constraints>
-          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Defense"/>
@@ -119,10 +158,10 @@
       </component>
       <component id="d05c6" class="javax.swing.JTextField" binding="player1DefenseTextField">
         <constraints>
-          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -130,8 +169,8 @@
       </component>
       <component id="f94db" class="javax.swing.JLabel" binding="player2DefenseLabel">
         <constraints>
-          <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Defense"/>
@@ -139,10 +178,10 @@
       </component>
       <component id="b49d0" class="javax.swing.JTextField" binding="player2DefenseTextField">
         <constraints>
-          <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -150,8 +189,8 @@
       </component>
       <component id="2b478" class="javax.swing.JLabel" binding="player1MagicLabel">
         <constraints>
-          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Magic"/>
@@ -159,10 +198,10 @@
       </component>
       <component id="a31a9" class="javax.swing.JTextField" binding="player1MagicTextField">
         <constraints>
-          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -170,10 +209,10 @@
       </component>
       <component id="cf6e3" class="javax.swing.JTextField" binding="player2MagicTextField">
         <constraints>
-          <grid row="14" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="22" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -181,8 +220,8 @@
       </component>
       <component id="63e1b" class="javax.swing.JLabel" binding="player2MagicLabel">
         <constraints>
-          <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Magic"/>
@@ -190,8 +229,8 @@
       </component>
       <component id="dafc" class="javax.swing.JLabel" binding="player1HealthLabel">
         <constraints>
-          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Health"/>
@@ -199,10 +238,10 @@
       </component>
       <component id="d5d59" class="javax.swing.JTextField" binding="player1HealthTextField">
         <constraints>
-          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="10"/>
@@ -210,100 +249,19 @@
       </component>
       <component id="d33d0" class="javax.swing.JLabel" binding="player2HealthLabel">
         <constraints>
-          <grid row="15" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <grid row="24" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Health"/>
         </properties>
       </component>
-      <component id="b8779" class="javax.swing.JTextField" binding="attackEqTextField">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="c3061" class="javax.swing.JTextField" binding="retaliationEqTextField">
-        <constraints>
-          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="4f0c6" class="javax.swing.JButton" binding="runSimulationButton">
-        <constraints>
-          <grid row="20" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Run Simulation"/>
-        </properties>
-      </component>
-      <component id="7a7b" class="javax.swing.JLabel" binding="hitEqLabel">
-        <constraints>
-          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Hit Eq"/>
-        </properties>
-      </component>
-      <component id="c0d8f" class="javax.swing.JLabel" binding="attackEqLabel">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Attack Eq"/>
-        </properties>
-      </component>
-      <component id="d2479" class="javax.swing.JButton" binding="loadEquationsButton" default-binding="true">
-        <constraints>
-          <grid row="3" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Load Equations"/>
-        </properties>
-      </component>
-      <component id="ba3c9" class="javax.swing.JLabel" binding="retaliationEqLabel">
-        <constraints>
-          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Retaliation Eq"/>
-        </properties>
-      </component>
-      <component id="4aa17" class="javax.swing.JTextField" binding="hitEqTextField">
-        <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="f6063" class="javax.swing.JButton" binding="selectOutputFileButton">
-        <constraints>
-          <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
-        </constraints>
-        <properties>
-          <text value="Select Output File"/>
-        </properties>
-      </component>
       <component id="ab993" class="javax.swing.JTextField" binding="player2DexTextField">
         <constraints>
-          <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -311,10 +269,10 @@
       </component>
       <component id="5a206" class="javax.swing.JTextField" binding="player2HealthTextField">
         <constraints>
-          <grid row="16" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="26" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="1.0" weighty="1.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="10"/>
@@ -322,8 +280,8 @@
       </component>
       <component id="8fd96" class="javax.swing.JLabel">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Damage"/>
@@ -331,10 +289,10 @@
       </component>
       <component id="7d1a0" class="javax.swing.JTextField" binding="player1DamageTextField">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -342,8 +300,8 @@
       </component>
       <component id="42b60" class="javax.swing.JLabel" binding="player2DamageLabel">
         <constraints>
-          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Damage"/>
@@ -351,10 +309,10 @@
       </component>
       <component id="b4297" class="javax.swing.JTextField" binding="player2DamageTextField">
         <constraints>
-          <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <forms defaultalign-horz="false"/>
         </constraints>
         <properties>
           <text value="3"/>
@@ -362,28 +320,17 @@
       </component>
       <component id="d04fc" class="javax.swing.JLabel">
         <constraints>
-          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="42" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Starting Distance (Turns)"/>
         </properties>
       </component>
-      <component id="bb983" class="javax.swing.JTextField" binding="player1StartingDistance">
-        <constraints>
-          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="1"/>
-        </properties>
-      </component>
       <component id="13af5" class="javax.swing.JLabel">
         <constraints>
-          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="28" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Class"/>
@@ -391,15 +338,15 @@
       </component>
       <component id="90d8e" class="javax.swing.JComboBox" binding="player1Class">
         <constraints>
-          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="30" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties/>
       </component>
       <component id="b03aa" class="javax.swing.JLabel">
         <constraints>
-          <grid row="17" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="28" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties>
           <text value="Class"/>
@@ -407,8 +354,178 @@
       </component>
       <component id="b5978" class="javax.swing.JComboBox" binding="player2Class">
         <constraints>
-          <grid row="18" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="30" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="31581" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="38" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Level"/>
+        </properties>
+      </component>
+      <grid id="7a524" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="40" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="62c85" class="javax.swing.JButton" binding="player1Level2Button">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Level 2"/>
+            </properties>
+          </component>
+          <component id="1ae60" class="javax.swing.JButton" binding="player1Level3Button">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Level 3"/>
+            </properties>
+          </component>
+          <component id="5c1fe" class="javax.swing.JButton" binding="player1Level1Button">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Level 1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="8c50" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="RPG Combat Simulator"/>
+        </properties>
+      </component>
+      <component id="bb983" class="javax.swing.JTextField" binding="player1StartingDistance">
+        <constraints>
+          <grid row="44" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="1"/>
+        </properties>
+      </component>
+      <component id="4f0c6" class="javax.swing.JButton" binding="runSimulationButton">
+        <constraints>
+          <grid row="44" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Run Simulation"/>
+        </properties>
+      </component>
+      <component id="f6063" class="javax.swing.JButton" binding="selectOutputFileButton">
+        <constraints>
+          <grid row="42" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Select Output File"/>
+        </properties>
+      </component>
+      <component id="7111e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="38" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Level"/>
+        </properties>
+      </component>
+      <grid id="6eee7" layout-manager="FormLayout">
+        <rowspec value="center:d:grow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <constraints>
+          <grid row="40" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="733d6" class="javax.swing.JButton" binding="player2Level2">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="Level 2"/>
+            </properties>
+          </component>
+          <component id="a2832" class="javax.swing.JButton" binding="player2Level3">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="Level 3"/>
+            </properties>
+          </component>
+          <component id="79f00" class="javax.swing.JButton" binding="player2Level1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="2"/>
+              <text value="Level 1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="fd9b8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="32" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Race"/>
+        </properties>
+      </component>
+      <component id="a8220" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="32" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Race"/>
+        </properties>
+      </component>
+      <component id="82d35" class="javax.swing.JComboBox" binding="player2Race">
+        <constraints>
+          <grid row="36" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="2493b" class="javax.swing.JComboBox" binding="player1Race">
+        <constraints>
+          <grid row="34" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
         </constraints>
         <properties/>
       </component>
