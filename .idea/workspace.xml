@@ -24,14 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1dcba844-37e7-4512-96aa-9c43d7078dbf" name="Default Changelist" comment="new laptop commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG Combat Simulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RPG Combat Simulator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filename.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filename.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/Character.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RPG Combat Simulator/RPGCombatSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RPGCombatSimulator.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPGCombatSimulator.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RPGCombatSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPGCombatSimulator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603723225674</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new laptop commit">
+      <created>1607530581100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607530581100</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,70 +135,5 @@
     <MESSAGE value="from spare laptop" />
     <MESSAGE value="new laptop commit" />
     <option name="LAST_COMMIT_MESSAGE" value="new laptop commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1603168353144">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1603168353144" />
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.683@0.0.1280.683" timestamp="1600754228227" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604419869236">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604419869236" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.683@0.0.1280.683" timestamp="1600755452213" />
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1604418980524">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604418980524" />
-    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607527489007">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1607527489007" />
-    <state x="370" y="203" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604419892954">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="370" y="203" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1604419892954" />
-    <state x="369" y="82" key="FileChooserDialogImpl" timestamp="1604421784347">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="369" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604421784347" />
-    <state width="1237" height="119" key="GridCell.Tab.0.bottom" timestamp="1607488464432">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="119" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607488464432" />
-    <state width="1237" height="21" key="GridCell.Tab.0.bottom/0.0.1280.683@0.0.1280.683" timestamp="1600864274454" />
-    <state width="1237" height="119" key="GridCell.Tab.0.center" timestamp="1607488464430">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="119" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607488464430" />
-    <state width="1237" height="21" key="GridCell.Tab.0.center/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
-    <state width="1237" height="119" key="GridCell.Tab.0.left" timestamp="1607488464430">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="119" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607488464430" />
-    <state width="1237" height="21" key="GridCell.Tab.0.left/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
-    <state width="1237" height="119" key="GridCell.Tab.0.right" timestamp="1607488464431">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="119" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607488464431" />
-    <state width="1237" height="21" key="GridCell.Tab.0.right/0.0.1280.683@0.0.1280.683" timestamp="1600864274453" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1604850423234">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604850423234" />
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604421787733" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1603723231638">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603723231638" />
-    <state x="396" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604420179792">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="396" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1604420179792" />
-    <state x="608" y="153" key="run.anything.popup" timestamp="1605972430860">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="608" y="153" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605972430860" />
   </component>
 </project>

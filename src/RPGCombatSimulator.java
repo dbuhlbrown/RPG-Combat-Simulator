@@ -466,7 +466,8 @@ public class RPGCombatSimulator extends JFrame{
         });
 
         player2Level1.addMouseMotionListener(new MouseMotionAdapter() { } );
-        
+
+        //confirmed correct
         player2Level1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -587,7 +588,7 @@ public class RPGCombatSimulator extends JFrame{
             }
 
         });
-        //These stats are for level 3, we need to add the level 2 FIX
+        //confirmed correct
         player2Level2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -706,6 +707,8 @@ public class RPGCombatSimulator extends JFrame{
                 }
             }
         });
+
+        //to be tested
         player2Level3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
